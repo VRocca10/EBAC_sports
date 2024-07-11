@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+    background-color: blue;
+    color: #fff;
+    padding: 16px 0;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    border-bottom: 1px solid blue;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+section {
+    color: #182c61;
+
+}
+
+section p {
+    margin: 0 auto;
+}
+
+.fachada {
+    margin-right: 32px;
+}
+
+.produto ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+.produto img {
+    width: 150px;
+
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #182c61;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        width: 90%;
+        
+    }
+
+    .produto ul {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+    }
+
+    section .container {
+        display: block;
+    }
+
+    button {
+        display: block;
+        width: 50%;
+        padding: 8px 0;
+        border: none;
+        background-color: #182c61;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+        border-radius: 6px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 90%;
+        
+    }
+
+    section .container {
+        display: block;
+    }
+
+    .produto ul {
+        display: block;
+        
+    }
+
+    button {
+        display: block;
+        width: 50%;
+        padding: 8px 0;
+        border: none;
+        background-color: #182c61;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+        border-radius: 6px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
